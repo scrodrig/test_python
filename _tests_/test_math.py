@@ -12,6 +12,10 @@ class TestMath(unittest.TestCase):
         number = self.fake.random_number()
         self.assertIsNotNone(OddNumbers.is_even(number))
 
+    def test_should_return_false_when_number_is_odd(self):
+        odd_number = self.fake.random_number() * 2
+        self.assertFalse(OddNumbers.is_even(odd_number))
+
     def test_should_return_true_when_number_is_even(self):
         even_number = self.fake.random_number() * 2 + 1
         self.assertTrue(OddNumbers.is_even(even_number))
