@@ -6,4 +6,4 @@
   script:
     - nosetests --rednose _tests_ -v -d
   after_success:
-    - codecov
+    - codecov --token=21103fe1-7292-4e2b-a689-bca582c24523
