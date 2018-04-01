@@ -6,4 +6,4 @@
   script:
     - nosetests --rednose _tests_ -v -d
   after_success:
-    - codecov --token=21103fe1-7292-4e2b-a689-bca582c24523
+    - CODACY_PROJECT_TOKEN=21ad9645051e4b398c27c3e7a53e2bad python-codacy-coverage -r coverage.xml
